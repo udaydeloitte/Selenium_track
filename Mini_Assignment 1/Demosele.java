@@ -11,8 +11,6 @@ public class Demosele {
     public static void main(String[] args){
         System.setProperty("webdriver.chrome.driver","C:\\Users\\udayprsingh\\Downloads\\chromedriver.exe");
         WebDriver driver=new ChromeDriver();
-        //Scanner sc=new Scanner(System.in);
-        //String choice=sc.next();
 
         driver.manage().window().maximize();
         driver.get("https://www.phptravels.net/hotels");
@@ -21,16 +19,21 @@ public class Demosele {
         phplogo.click();
         driver.quit();
 
-        driver.findElement(By.xpath("//i[contains(@class,\"la la-bars\")]"));
+        driver.findElement(By.xpath("//a[text()='flights']"));
 
-        WebElement phphome = driver.findElement(By.xpath("//i[contains(@class,\"la la-bars\")]"));
-        phphome.click();
+        WebElement flight = driver.findElement(By.xpath("//a[text()='flights']"));
+        flight.click();
         driver.quit();
-        
+
+
+        WebElement home = driver.findElement(By.xpath(""));
+        home.click();
+        driver.quit();
 
 
 
 
-            //driver.quit();
+
+        //driver.quit();
         }
 }
