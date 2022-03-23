@@ -14,20 +14,14 @@ public class Demosele {
 
         driver.manage().window().maximize();
         driver.get("https://www.phptravels.net/hotels");
-        driver.findElement(By.xpath("//img[contains(@alt,\"logo\")]"));
         WebElement phplogo = driver.findElement(By.xpath("//img[contains(@alt,\"logo\")]"));
-        phplogo.click();
-        driver.quit();
-
-        driver.findElement(By.xpath("//a[text()='flights']"));
-
         WebElement flight = driver.findElement(By.xpath("//a[text()='flights']"));
-        flight.click();
-        driver.quit();
-
-
         WebElement home = driver.findElement(By.xpath(""));
-        home.click();
+        WebElement tours = driver.findElement(By.xpath("//a[text()=\"Tours\"]"));
+        WebElement company = driver.findElement(By.xpath("//body[@id=\"fadein\"]"));
+        
+
+
         driver.quit();
 
 
